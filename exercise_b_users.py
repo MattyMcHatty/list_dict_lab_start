@@ -73,6 +73,7 @@ print(users['Avril']['pets'][0]['species'])
 # 5. Get the smallest of Erik's lottery numbers
 
 print(min(users['Erik']['lottery_numbers']))
+#or print(sorted(users['Erik]['lottery_numbers'])[0])
 
 # 6. Return an list of Avril's lottery numbers that are even
 

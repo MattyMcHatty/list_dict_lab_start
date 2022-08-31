@@ -8,10 +8,9 @@ stops.append('Edinburgh Waverly')
 
 stops.insert(0,'Glasgow Queen Street')
 
-
 #3. Add "Polmont" at the appropriate point (between "Falkirk High" and "Linlithgow")
 
-stops.insert(3, 'Polmont')
+stops.insert(4, 'Polmont')
 
 #4. Print out the index position of "Linlithgow"
 
@@ -22,8 +21,10 @@ print(stops.index('Linlithgow'))
 stops.remove('Livingston')
 
 #6. Delete "Cumbernauld" from the list by index
+stops.pop(stops.index('Cumbernauld')) # <- This is the best way to do it. Searches for the thing to delete.
+# or use del stops[stops.index('Cumbernauld')]
+# or you could use - stops.pop(2) - and hard code it in.
 
-stops.pop(2)
 #7. Print the number of stops there are in the list
 
 print(len(stops))
